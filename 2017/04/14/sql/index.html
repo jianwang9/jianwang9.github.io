@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="mysql,study," />
 
 
 
@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta name="keywords">
+<meta name="description" content="行转列用if和case when then else end都行   select sum(CASE when score between 10 and 20 then 1 else 0 END) 一级别 from 表 select sum(if(score between 10 and 20,1,0)) 一级别 from 表 条件过滤条件过滤啥大于,小于的,并不会匹配到包含null值的行 con">
+<meta name="keywords" content="mysql,study">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://yoursite.com/2017/04/13/hello-world/index.html">
+<meta property="og:title" content="Mysql笔记">
+<meta property="og:url" content="http://yoursite.com/2017/04/14/sql/index.html">
 <meta property="og:site_name" content="王健">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-04-13T04:51:54.517Z">
+<meta property="og:description" content="行转列用if和case when then else end都行   select sum(CASE when score between 10 and 20 then 1 else 0 END) 一级别 from 表 select sum(if(score between 10 and 20,1,0)) 一级别 from 表 条件过滤条件过滤啥大于,小于的,并不会匹配到包含null值的行 con">
+<meta property="og:updated_time" content="2017-04-14T09:00:01.185Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Mysql笔记">
+<meta name="twitter:description" content="行转列用if和case when then else end都行   select sum(CASE when score between 10 and 20 then 1 else 0 END) 一级别 from 表 select sum(if(score between 10 and 20,1,0)) 一级别 from 表 条件过滤条件过滤啥大于,小于的,并不会匹配到包含null值的行 con">
 
 
 
@@ -125,13 +125,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/04/13/hello-world/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/04/14/sql/"/>
 
 
 
 
 
-  <title> Hello World | 王健 </title>
+  <title> Mysql笔记 | 王健 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -270,7 +270,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/13/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/04/14/sql/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="wangjian">
@@ -291,7 +291,7 @@
             
             
               
-                Hello World
+                Mysql笔记
               
             
           </h1>
@@ -306,8 +306,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-13T12:51:54+08:00">
-                2017-04-13
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-14T16:59:35+08:00">
+                2017-04-14
               </time>
             
 
@@ -316,6 +316,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mysql/" itemprop="url" rel="index">
+                    <span itemprop="name">mysql</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -360,15 +382,28 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h3 id="行转列"><a href="#行转列" class="headerlink" title="行转列"></a>行转列</h3><p>用if和case when then else end都行  </p>
+<p>select sum(CASE when score between 10 and 20 then 1 else 0 END) 一级别 from 表</p>
+<p>select sum(if(score between 10 and 20,1,0)) 一级别 from 表</p>
+<h3 id="条件过滤"><a href="#条件过滤" class="headerlink" title="条件过滤"></a>条件过滤</h3><p>条件过滤啥大于,小于的,并不会匹配到包含null值的行</p>
+<h3 id="concat函数"><a href="#concat函数" class="headerlink" title="concat函数"></a>concat函数</h3><p>用法: concat(string1,string2,…)<br>作用: 连接字符串,可以指定列的值和自己指定的字符串  </p>
+<h3 id="now函数"><a href="#now函数" class="headerlink" title="now函数"></a>now函数</h3><p>用法: now()<br>作用: 获取当前系统时间  </p>
+<h3 id="trim-rtrim-ltrim"><a href="#trim-rtrim-ltrim" class="headerlink" title="trim,rtrim,ltrim"></a>trim,rtrim,ltrim</h3><p>用法: trim(String),ltrim(String),rtrim(String)<br>作用: 去除字符串两端,左边,右边的空白字符</p>
+<h3 id="curdate"><a href="#curdate" class="headerlink" title="curdate"></a>curdate</h3><p>用法: curdate()<br>作用: 获取当前日期,年月日  </p>
+<h3 id="str-to-date-date-format"><a href="#str-to-date-date-format" class="headerlink" title="str_to_date,date_format"></a>str_to_date,date_format</h3><p>用法: str_to_date(string,format),date_format(date,format)<br>作用: 将指定的字符串转成日期类型,将日期类型转成字符串</p>
+<h3 id="year"><a href="#year" class="headerlink" title="year"></a>year</h3><p>用法: year(date)<br>作用: 取出日期类型中的year部门,其他内容截取也差不多  </p>
+<h3 id="一些算术操作"><a href="#一些算术操作" class="headerlink" title="一些算术操作"></a>一些算术操作</h3><p>abs()  返回一个数的绝对值<br>cos()  返回一个角度的余弦<br>exp()  返回一个数的指数值<br>pi()   返回圆周率<br>sin()  返回一个角度的正弦<br>sqrt() 返回一个数的平方根<br>tan()  返回一个角度的正切  </p>
+<h3 id="一些聚合函数"><a href="#一些聚合函数" class="headerlink" title="一些聚合函数"></a>一些聚合函数</h3><p>avg()  返回某列的平均值<br>count() 返回某列的行数<br>max()  返回某列的最大值<br>min()  返回某列的最小值<br>sum()  返回某列值之和  </p>
+<h3 id="insert-into-…-select-和-selct-xxx-into-表a-from-表b"><a href="#insert-into-…-select-和-selct-xxx-into-表a-from-表b" class="headerlink" title="insert into … select  和 selct xxx into 表a from 表b"></a>insert into … select  和 selct xxx into 表a from 表b</h3><p>前者导出  后者导入  </p>
+<h3 id="存储过程"><a href="#存储过程" class="headerlink" title="存储过程"></a>存储过程</h3><p>创建:<br>create procedure XXX(in xx 类型|out xx 类型)<br>begin<br>declare xx 类型;<br>sql语句;<br>end;  </p>
+<p>查看:<br>show procedure status;</p>
+<p>删除:<br>drop procedure xxx;</p>
+<h3 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h3><p>创建:<br>create index index_name on table (列)</p>
+<p>查询:<br>show index from table;  </p>
+<p>删除:<br>dorp index index_name on table;</p>
+<h3 id="触发器"><a href="#触发器" class="headerlink" title="触发器"></a>触发器</h3><p>创建:<br>create trigger triggerName<br>after|before insert/update/delete on 表名<br>for each row<br>begin<br>sql语句;<br>end;  </p>
+<p>查询:<br>show triggers;  </p>
+<p>删除:<br>drop trigger trigger_name;</p>
 
       
     </div>
@@ -395,6 +430,14 @@
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/mysql/" rel="tag"># mysql</a>
+          
+            <a href="/tags/study/" rel="tag"># study</a>
+          
+        </div>
       
 
       
@@ -476,7 +519,25 @@
           
 
           
+            
+            
+            <div class="site-state-item site-state-categories">
+              
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">分类</span>
+              
+            </div>
+          
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              
+            </div>
           
 
         </nav>
@@ -508,7 +569,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#行转列"><span class="nav-text">行转列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#条件过滤"><span class="nav-text">条件过滤</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#concat函数"><span class="nav-text">concat函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#now函数"><span class="nav-text">now函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#trim-rtrim-ltrim"><span class="nav-text">trim,rtrim,ltrim</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#curdate"><span class="nav-text">curdate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#str-to-date-date-format"><span class="nav-text">str_to_date,date_format</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#year"><span class="nav-text">year</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一些算术操作"><span class="nav-text">一些算术操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#一些聚合函数"><span class="nav-text">一些聚合函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#insert-into-…-select-和-selct-xxx-into-表a-from-表b"><span class="nav-text">insert into … select  和 selct xxx into 表a from 表b</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#存储过程"><span class="nav-text">存储过程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#索引"><span class="nav-text">索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#触发器"><span class="nav-text">触发器</span></a></li></ol></div>
             
 
           </div>
